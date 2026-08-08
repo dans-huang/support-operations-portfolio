@@ -60,15 +60,6 @@
       </aside>
     </section>
 
-    <section class="metrics-band" aria-label="Selected evidence">
-      <div class="metrics-inner">
-        <article class="metric metric-compact reveal"><strong>56% / 32%</strong><span>AI resolution and AI handoff on live email tickets &mdash; two metrics I keep separate on purpose</span></article>
-        <article class="metric reveal"><strong>86.6%</strong><span>July 2026 CSAT on 448 responses, from a survey denominator I deliberately narrowed</span></article>
-        <article class="metric reveal"><strong>6,667</strong><span>AI-answered knowledge questions in July 2026, reaching 7.0% of all Help Center visitors</span></article>
-        <article class="metric reveal"><strong>9</strong><span>consecutive months of Voice-of-Customer reporting to the leadership team</span></article>
-        <article class="metric metric-compact reveal"><strong>&ge;95% / 20</strong><span>shadow-mode accuracy and match count required before any AI action runs unsupervised</span></article>
-      </div>
-    </section>
 
     <section class="section-shell section-block intro-grid" id="system">
       <div class="section-heading reveal">
@@ -174,7 +165,7 @@
 
       <div class="transformation-proof reveal">
         <p><strong>The customer-facing agent.</strong> An AI agent works inbound email tickets around the clock. I designed its escalation logic myself, on one principle: authority is decided by the stake of the case, not the confidence of the model. Anything touching money, warranty, or a physical shipment goes to a person. It makes no promises about product features or about what another department will do.</p>
-        <p>I publish two metrics about it and keep them separate on purpose: AI resolution rate, and AI handoff rate, both against total closed tickets. Resolution reached roughly 56% in the most recent week; handoff sits around a third. They are allowed to disagree, because handoff is designed in rather than failed into &mdash; which makes it structurally harder to push down than resolution is to push up. I would be suspicious of any quarter where both moved the flattering way at once.</p>
+        <p>I publish two metrics about it, kept separate: AI resolution rate and AI handoff rate, both against total closed tickets. The agent finished 42.6% of closed tickets in June 2026 and 44.7% in July; handoff sits around a third. They are allowed to disagree, because handoff is designed in rather than failed into &mdash; which makes it structurally harder to push down than resolution is to push up. I would be suspicious of any quarter where both moved the flattering way at once.</p>
         <p><strong>The knowledge layer underneath.</strong> None of this works on a stale knowledge base, so I built and instrumented the retrieval layer too. Help Center AI search answered 6,667 questions in July 2026 for 3,315 distinct people &mdash; 7.0% of everyone who visited &mdash; with intensity up 27% from May <em>while site traffic declined</em>. It is single-turn retrieval, not a conversational agent, and I would not present it as one. What it demonstrates is the substrate a Help Center chatbot has to sit on: hybrid dense-plus-lexical retrieval built after dense embeddings failed on firmware versions and error codes, and sensitive-content filtering moved from the prompt layer to the retrieval layer after a prompt-only rule leaked an internal link to a customer. I verified the usage figure two ways &mdash; the analytics platform and the workflow engine's own execution log agree within 3%.</p>
       </div>
 
