@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dans Huang, AI Support Lead candidate: owned a chatbot program from contract to shutdown, built a governed multi-agent conversational AI that other departments use, and reports a program leadership argues with.">
+  <meta name="theme-color" content="#f3efe6">
+  <title>Dans Huang | Conversational AI Program Ownership</title>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="styles.css?v=9">
+  <script src="script.js?v=5" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Dans Huang, home">
+      <span class="wordmark-mark">DH</span>
+      <span>Dans Huang</span>
+    </a>
+    <nav class="site-nav" aria-label="Portfolio sections">
+      <a href="#system">Program</a>
+      <a href="#vendor">Vendor</a>
+      <a href="#judgment">Decisions</a>
+      <a href="#transformation">Team</a>
+      <a href="#limits">Limits</a>
+      <a href="#harvey">Harvey</a>
+    </nav>
+    <a class="header-jump" href="#harvey">Why Harvey</a>
+    <a class="header-cta" href="assets/dans-huang-resume.pdf">Resume</a>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Taipei-based | Relocating to San Francisco | Conversational AI program ownership</p>
+        <h1>I own conversational AI end to end. <em>The systems, the vendor relationship, the metrics, and the people who take it over.</em></h1>
+        <p class="hero-lede">An AI agent works our inbound email tickets around the clock, and I own it: its escalation logic, its evaluation bar, its releases, and both of the metrics I publish about it. Around that sits a governed multi-agent system in Slack that other departments now use without me, the knowledge and retrieval layer underneath it, and before all of it, an external chatbot platform I selected, contracted, ran, and ended. I built the first version of nearly every component myself, then grew the specialists who maintain them &mdash; and I report the whole program to our leadership team every month.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#system">See the program</a>
+          <a class="text-link" href="#limits">What I don't claim <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <p class="confidentiality-note">Every interface and demonstration shown here is a synthetic reconstruction. I validate the metrics against production evidence, but I do not publish my employer's customer data, systems, or source code.</p>
+      </div>
+
+      <aside class="brief-card reveal" aria-label="Program brief">
+        <div class="brief-topline">
+          <span>Program brief</span>
+          <span class="status"><i></i> Production + evolving</span>
+        </div>
+        <p class="brief-title">What I own</p>
+        <dl class="brief-list">
+          <div><dt>Program</dt><dd>Conversational AI, end to end</dd></div>
+          <div><dt>Vendor</dt><dd>Contract to shutdown</dd></div>
+          <div><dt>Governance</dt><dd>Tiered autonomy + approvals</dd></div>
+          <div><dt>Reporting</dt><dd>Monthly to leadership</dd></div>
+          <div><dt>People</dt><dd>Hiring, growth, accountability</dd></div>
+        </dl>
+        <div class="brief-footer">Built for a consumer hardware and software operation running roughly 48,000 support tickets a year, with a support team that halved without backfill because the people who stayed grew into different jobs.</div>
+      </aside>
+    </section>
+
+    <section class="metrics-band" aria-label="Selected evidence">
+      <div class="metrics-inner">
+        <article class="metric metric-compact reveal"><strong>56% / 32%</strong><span>AI resolution and AI handoff on live email tickets &mdash; two metrics I keep separate on purpose</span></article>
+        <article class="metric reveal"><strong>86.6%</strong><span>July 2026 CSAT on 448 responses, from a survey denominator I deliberately narrowed</span></article>
+        <article class="metric reveal"><strong>6,667</strong><span>AI-answered knowledge questions in July 2026, reaching 7.0% of all Help Center visitors</span></article>
+        <article class="metric reveal"><strong>9</strong><span>consecutive months of Voice-of-Customer reporting to the leadership team</span></article>
+        <article class="metric metric-compact reveal"><strong>&ge;95% / 20</strong><span>shadow-mode accuracy and match count required before any AI action runs unsupervised</span></article>
+      </div>
+    </section>
+
+    <section class="section-shell section-block intro-grid" id="system">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / The program I run today</p>
+        <h2>A conversational AI<br>with a chain of command.</h2>
+      </div>
+      <div class="section-intro reveal">
+        <p>I have run three conversational surfaces: an email agent holding multi-turn conversations with customers, a multi-agent system colleagues talk to in Slack, and before both, an external chatbot on our Help Center. They are one program, not three projects &mdash; same escalation philosophy, same evaluation suite, same approval model, same person accountable when one of them says something wrong.</p>
+        <p>The Slack system is the spine. Three specialist agents report into a central Governor, each mapped to a named human owner, so the AI org chart mirrors the human one. Every external write passes a tiered approval gate before it touches a customer, a ticket, or a knowledge base.</p>
+        <p>It started as a tool for my own team. It is now something other departments use directly: product and e-commerce pull it into their channels, and our BI team queries it for support data without going through me at all.</p>
+      </div>
+
+      <div class="system-map reveal" role="img" aria-label="Conversational AI operating architecture from request through judgment, authority tier, action, and learning">
+        <div class="map-column map-entry">
+          <p class="map-label">Someone asks</p>
+          <div class="map-node">Slack conversation</div>
+          <div class="map-node">Email tickets</div>
+          <div class="map-node">Help Center search</div>
+        </div>
+        <div class="map-arrow" aria-hidden="true">&rarr;</div>
+        <div class="map-column map-runtime">
+          <p class="map-label">Governor judges</p>
+          <div class="map-node map-node-accent">Read signals, decide</div>
+          <div class="map-node">Retrieve evidence</div>
+          <div class="map-node">Dispatch a specialist</div>
+        </div>
+        <div class="map-arrow" aria-hidden="true">&rarr;</div>
+        <div class="map-column map-control">
+          <p class="map-label">Authority gate</p>
+          <div class="map-node">Auto, recommend, or wait</div>
+          <div class="map-node">Route to the right owner</div>
+          <div class="map-node">Record the revert path</div>
+        </div>
+        <div class="map-arrow" aria-hidden="true">&rarr;</div>
+        <div class="map-column map-learning">
+          <p class="map-label">It gets smarter</p>
+          <div class="map-node">Learn from rejections</div>
+          <div class="map-node">Shadow-test new patterns</div>
+          <div class="map-node">Graduate on evidence</div>
+        </div>
+      </div>
+
+      <div class="capability-heading reveal">
+        <p class="eyebrow">The four ideas that make it safe to run</p>
+        <h3>Autonomy is earned, never granted.</h3>
+        <p class="technical-intro">Most AI programs treat approval as binary: a human reviews, or a human doesn't. That wastes attention on trivia and under-protects the dangerous cases. Open the notes where implementation detail helps you evaluate the work.</p>
+      </div>
+
+      <div class="module-grid">
+        <article class="module-card reveal">
+          <div class="module-meta"><span class="module-number">01</span><span class="module-state">Live</span></div>
+          <h3>Three tiers, not two</h3>
+          <p>Every action is graded by consequence, not by whether it is technically automatable.</p>
+          <ul><li><strong>Auto</strong> &mdash; only patterns that have already graduated</li><li><strong>Recommend</strong> &mdash; the default: draft, queue, wait for a named owner</li><li><strong>Judgment</strong> &mdash; no draft may even enter the queue</li></ul>
+          <details class="technical-note">
+            <summary aria-label="How the judgment tier works"><span>What sits in Judgment</span><span aria-hidden="true">+</span></summary>
+            <div class="technical-note-body">
+              <p><strong>Permanently supervised</strong> Fraud signals. Legal, chargeback, or regulatory-complaint language. Any situation with no precedent in the audit log and no matching skill. Cross-team political sensitivity. Customer-facing commitments above a materiality threshold.</p>
+              <p><strong>The rule that matters</strong> A Judgment item never auto-escalates to a lower tier. Only I can re-grade it. Pattern-matching in unfamiliar territory is exactly where an AI is most confident and most wrong, so the system is forbidden from trying.</p>
+            </div>
+          </details>
+        </article>
+        <article class="module-card reveal">
+          <div class="module-meta"><span class="module-number">02</span><span class="module-state">Live</span></div>
+          <h3>Shadow mode as the only door</h3>
+          <p>No pattern is ever promoted to unsupervised cold. It must first run silently, logging what it <em>would</em> have done.</p>
+          <ul><li>At least 20 matched cases, or 30 days</li><li>At least 95% agreement with the human decision</li><li>Fail the bar and it stays supervised, or gets re-specified</li></ul>
+          <details class="technical-note">
+            <summary aria-label="How shadow mode is audited"><span>How I audit it</span><span aria-hidden="true">+</span></summary>
+            <div class="technical-note-body">
+              <p><strong>Method</strong> Each shadow match writes one structured line: the evidence, the intended action, and a null outcome field. When the real human decision lands, the outcome is backfilled. Accuracy is scored against that paired record, not against my impression of how it has been doing.</p>
+              <p><strong>An honest failure</strong> The framework sat dormant for nineteen days after launch because nothing was writing to the log. Nothing graduated, and the gap is recorded in the spec rather than quietly patched. A governance mechanism that is not wired into the daily loop is decoration.</p>
+            </div>
+          </details>
+        </article>
+        <article class="module-card reveal">
+          <div class="module-meta"><span class="module-number">03</span><span class="module-state module-state-evolving">Live + compounding</span></div>
+          <h3>It learns from being told no</h3>
+          <p>Every rejection or correction writes a principle back into the system's memory. Before proposing anything, it checks whether an existing principle predicts refusal &mdash; and if so, never proposes at all.</p>
+          <ul><li>Rejections become rules, not repeated attempts</li><li>Silence has defined meaning, per risk class</li><li>Proposal volume falls as judgment improves</li></ul>
+          <details class="technical-note">
+            <summary aria-label="How silence is interpreted"><span>What silence means</span><span aria-hidden="true">+</span></summary>
+            <div class="technical-note-body">
+              <p><strong>Non-customer-facing</strong> Forty-eight hours without a reply is a no. The proposal closes itself, records the reason, and the pattern is learned. An approval queue that accumulates unanswered items is not a control; it is a backlog wearing a control's clothes.</p>
+              <p><strong>Customer-facing</strong> Never expires. It escalates to me on a separate channel until I answer. The asymmetry is deliberate: the cost of a silently dropped internal suggestion is small, and the cost of a silently dropped customer commitment is not.</p>
+            </div>
+          </details>
+        </article>
+        <article class="module-card reveal">
+          <div class="module-meta"><span class="module-number">04</span><span class="module-state">Live</span></div>
+          <h3>Autonomous is not silent</h3>
+          <p>Every unsupervised action must notify whoever might want to undo it &mdash; with the revert command, in the same cycle, tagged to the person who can run it.</p>
+          <ul><li>Plain-language statement of what happened</li><li>The exact command to reverse it</li><li>An audit id so the trail cross-references</li></ul>
+          <details class="technical-note">
+            <summary aria-label="How autonomy was expanded"><span>How I decided to loosen it</span><span aria-hidden="true">+</span></summary>
+            <div class="technical-note-body">
+              <p><strong>The evidence</strong> I ran a thirty-day audit of the approval channel and found that 65% of the posts had drawn zero human engagement. That is not a healthy control; it is a queue people have learned to scroll past. The expansion of autonomy was argued from that number, not from a feeling that the AI had got good.</p>
+              <p><strong>The constraint I kept</strong> If a stakeholder cannot be identified, or the blast radius is uncertain, the action drops back to supervised. The written rule is that not knowing who to tell is never a reason to act quietly.</p>
+            </div>
+          </details>
+        </article>
+      </div>
+
+      <div class="transformation-proof reveal">
+        <p><strong>The customer-facing agent.</strong> An AI agent works inbound email tickets around the clock. I designed its escalation logic myself, on one principle: authority is decided by the stake of the case, not the confidence of the model. Anything touching money, warranty, or a physical shipment goes to a person. It makes no promises about product features or about what another department will do.</p>
+        <p>I publish two metrics about it and keep them separate on purpose: AI resolution rate, and AI handoff rate, both against total closed tickets. Resolution reached roughly 56% in the most recent week; handoff sits around a third. They are allowed to disagree, because handoff is designed in rather than failed into &mdash; which makes it structurally harder to push down than resolution is to push up. I would be suspicious of any quarter where both moved the flattering way at once.</p>
+        <p><strong>The knowledge layer underneath.</strong> None of this works on a stale knowledge base, so I built and instrumented the retrieval layer too. Help Center AI search answered 6,667 questions in July 2026 for 3,315 distinct people &mdash; 7.0% of everyone who visited &mdash; with intensity up 27% from May <em>while site traffic declined</em>. It is single-turn retrieval, not a conversational agent, and I would not present it as one. What it demonstrates is the substrate a Help Center chatbot has to sit on: hybrid dense-plus-lexical retrieval built after dense embeddings failed on firmware versions and error codes, and sensitive-content filtering moved from the prompt layer to the retrieval layer after a prompt-only rule leaked an internal link to a customer. I verified the usage figure two ways &mdash; the analytics platform and the workflow engine's own execution log agree within 3%.</p>
+      </div>
+
+      <p class="evidence-boundary reveal"><strong>Evidence boundary</strong> These notes are distilled from private production repositories, approval records, analytics queries, and live workflow execution history. Customer data and proprietary code are not published.</p>
+
+      <p class="section-bridge reveal">That is the program I run now. The one I shut down taught me most of it.</p>
+    </section>
+
+    <section class="section-shell section-block judgment-section" id="vendor">
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 / Owning the platform partner</p>
+        <h2>A year of running someone else's chatbot on my site.</h2>
+      </div>
+      <p class="judgment-lede reveal">Through 2024 we ran a customer-facing chatbot from an external platform partner &mdash; the same partner we bought our support platform through. I selected it, signed the contract, owned the relationship, ran the conversation design and escalation logic, and eventually made the call to take it off the site. Managing that relationship is the part of this job most people have never actually done, and four things came out of that year that are load-bearing in how I work now.</p>
+
+      <div class="incident-list">
+        <details class="incident reveal" open>
+          <summary>
+            <span class="incident-index">01</span>
+            <span class="incident-summary"><small>Measurement</small><strong>My own success metric was counting silence as success.</strong></span>
+            <span class="incident-toggle">Read case</span>
+          </summary>
+          <div class="incident-body"><p><strong>What the number said</strong> Weekly chatbot resolution ran in the seventies and eighties, and occasionally hit 100%.</p><p><strong>What was actually happening</strong> There was no rule forcing a handoff after a given number of exchanges &mdash; it had to be explicitly triggered. And an abandoned conversation simply timed out: the system closed it, sent a survey, and applied a resolved tag. The report counted that tag. A customer who read a wrong answer and walked away scored identically to one we had helped.</p><p><strong>What I concluded</strong> A rule-based tag is not an observed outcome. Nothing short of a real conversation audit distinguishes solved from abandoned, and I have never since accepted a containment or deflection figure without asking what the denominator excludes and what counts as a win.</p></div>
+        </details>
+        <details class="incident reveal">
+          <summary>
+            <span class="incident-index">02</span>
+            <span class="incident-summary"><small>Contracting</small><strong>I negotiated the price and forgot to negotiate the pace.</strong></span>
+            <span class="incident-toggle">Read case</span>
+          </summary>
+          <div class="incident-body"><p><strong>What I did not ask for</strong> A strict service level. A committed roadmap with a mechanism to hold them to it. Any written definition of what the product had to be able to do three and six months out.</p><p><strong>Why it mattered</strong> When the partner's engineering capacity ran short and they stopped keeping pace with the models available, I had no lever and no yardstick. I could be dissatisfied, but I could not be specific, and a vendor conversation without specifics is just a complaint.</p><p><strong>What I would do on day one now</strong> Define the acceptance criteria before the signature, not after the disappointment. Name the review cadence, the performance evidence each side brings, and what happens when the evidence is bad.</p></div>
+        </details>
+        <details class="incident reveal">
+          <summary>
+            <span class="incident-index">03</span>
+            <span class="incident-summary"><small>Build versus buy</small><strong>We could build it, so I decided not to.</strong></span>
+            <span class="incident-toggle">Read case</span>
+          </summary>
+          <div class="incident-body"><p><strong>The case for building</strong> By the time the partner was falling behind, we already had a working email AI wired into the Help Center, the knowledge base, our internal processes, and our internal platforms. We built a chatbot prototype of our own, and it worked.</p><p><strong>Why I shelved it indefinitely</strong> Our ticket mix is dominated by troubleshooting and warranty service &mdash; cases needing data lookups and several rounds of product-specific instruction. Chat was not the constraint. Widening the email agent moved more customer outcome per week of engineering than launching a chat surface would have.</p><p><strong>What that means for Harvey</strong> I have made this call in both directions, which is why I can tell where a product sits. Chat is a weak container for hardware diagnosis and shipping logistics, and a strong one for precise knowledge questions from professionals who expect an immediate answer &mdash; which is the shape of Harvey's Help Center. I would not arrive relitigating whether the chatbot should exist. I would arrive knowing what makes one worth keeping.</p></div>
+        </details>
+        <details class="incident reveal">
+          <summary>
+            <span class="incident-index">04</span>
+            <span class="incident-summary"><small>Conversation design</small><strong>The flow broke on the most human thing users do.</strong></span>
+            <span class="incident-toggle">Read case</span>
+          </summary>
+          <div class="incident-body"><p><strong>The failure</strong> The bot assumed one message per turn. Anxious customers do not send one message per turn &mdash; they send three in a row while they think. Every burst broke the flow and confused the bot, and the experience collapsed exactly when the customer was most upset.</p><p><strong>The other two</strong> It has to feel conversational rather than retrieved, and it has to be fast. Latency reads as indifference.</p><p><strong>Where it went</strong> All three went into the prototype we built afterward, and the escalation logic I designed for the email agent is built on the same principle: decide by the stake of the case, not by the confidence of the model.</p></div>
+        </details>
+      </div>
+
+      <div class="transformation-proof reveal">
+        <p><strong>To be direct about the obvious read.</strong> My only chatbot ended in a shutdown, and Harvey's needs to be live and improving. So the question worth asking is what I actually shut down. It was not chat as a channel &mdash; it was a partner who had run out of engineering capacity, running on a product line where chat could never have been the constraint. The four lessons above are the ones I would use on day one to keep a chatbot from arriving at that state: acceptance criteria before the signature, conversation design that survives a real user, escalation by stake rather than confidence, and a resolution metric that cannot mistake an abandoned conversation for a solved one.</p>
+        <p><strong>The lesson that became architecture.</strong> Getting locked to one vendor's pace once was enough. The system I run now selects its runtime and model through a neutral configuration layer, with a written rule that behavior must not depend on any single model provider, and the customer-facing agent runs on isolated credentials from the rest. Vendor independence is not a preference I hold; it is a constraint the codebase enforces.</p>
+        <p>I have also owned a multi-year support quality-assurance platform relationship, and wound its usage down as the team shrank and AI took over most routine auditing. Ending a vendor relationship well is a skill of its own, and I have now done it twice.</p>
+      </div>
+      <p class="section-bridge reveal">Vendors are one kind of decision. Here are the ones where production proved me wrong.</p>
+    </section>
+
+    <section class="section-shell section-block judgment-section" id="judgment">
+      <div class="section-heading reveal">
+        <p class="eyebrow">03 / Decisions and permanent change</p>
+        <h2>Six times production disproved me &mdash; and what became permanent.</h2>
+      </div>
+      <p class="judgment-lede reveal">I personally built the first versions of nearly every component in today's system, from the central Governor to the original email agent. As it matured I handed defined maintenance areas to specialists. I still own the roadmap, architecture, authority boundaries, evaluation bar, releases, operating metrics, and incident response. These six show how that accountability works when I am the one who got it wrong.</p>
+
+      <div class="incident-list">
+        <details class="incident reveal">
+          <summary>
+            <span class="incident-index">01</span>
+            <span class="incident-summary"><small>Measurement</small><strong>I was optimizing a proxy again.</strong></span>
+            <span class="incident-toggle">Read case</span>
+          </summary>
+          <div class="incident-body"><p><strong>The decision</strong> I treated final ticket ownership as the AI handoff metric and planned toward an 80% AI-resolution target.</p><p><strong>The signal</strong> Final ownership missed mid-ticket human intervention, while many apparent failures were correct warranty or authority escalations.</p><p><strong>The correction</strong> I split AI-attempted capability from handoff quality rather than optimizing one number that flattered both.</p><p><strong>What became permanent</strong> Two separate published metrics that are allowed to disagree, and a roadmap governed by customer outcomes instead of a single automation gate.</p></div>
+        </details>
+        <details class="incident reveal">
+          <summary>
+            <span class="incident-index">02</span>
+            <span class="incident-summary"><small>Quality</small><strong>A flattering quality score contradicted customer outcomes.</strong></span>
+            <span class="incident-toggle">Read case</span>
+          </summary>
+          <div class="incident-body"><p><strong>The decision</strong> Our audit rubric rated the AI above the human team.</p><p><strong>The signal</strong> Its dissatisfaction outcomes were worse; the rubric rewarded polished responses without anchoring to customer satisfaction.</p><p><strong>The correction</strong> I rejected the score and recalibrated the rubric around dissatisfaction and explicit human-escalation failures.</p><p><strong>What became permanent</strong> High-scoring dissatisfied tickets now flag calibration failure, and confirmed causes require a regression case before closure.</p></div>
+        </details>
+        <details class="incident reveal">
+          <summary>
+            <span class="incident-index">03</span>
+            <span class="incident-summary"><small>Ownership</small><strong>I approved the policy, then crossed the implementation boundary.</strong></span>
+            <span class="incident-toggle">Read case</span>
+          </summary>
+          <div class="incident-body"><p><strong>The decision</strong> A policy approval was treated as permission to push the implementation directly.</p><p><strong>The signal</strong> The execution bypassed the specialist who owned the production agent.</p><p><strong>The correction</strong> I ordered a rollback four minutes after the mismatch surfaced and reopened the work under the correct owner.</p><p><strong>What became permanent</strong> Policy approval no longer grants implementation ownership; production changes route through the accountable specialist.</p></div>
+        </details>
+        <details class="incident reveal">
+          <summary>
+            <span class="incident-index">04</span>
+            <span class="incident-summary"><small>Simplicity</small><strong>More rules made the AI less capable.</strong></span>
+            <span class="incident-toggle">Read case</span>
+          </summary>
+          <div class="incident-body"><p><strong>The decision</strong> Two weak replies initially produced proposals for more keywords and mandatory gates.</p><p><strong>The signal</strong> The rules were overriding semantic judgment and forcing customers to repeat steps they had already completed.</p><p><strong>The correction</strong> I stopped the additions and separated hard safety and authority boundaries from reversible support judgment.</p><p><strong>What became permanent</strong> We deleted the keyword table and replaced four rigid gates with principle-and-signal checks.</p></div>
+        </details>
+        <details class="incident reveal">
+          <summary>
+            <span class="incident-index">05</span>
+            <span class="incident-summary"><small>Release discipline</small><strong>A passing evaluation did not mean production worked.</strong></span>
+            <span class="incident-toggle">Read case</span>
+          </summary>
+          <div class="incident-body"><p><strong>The decision</strong> A model that passed the fixed evaluation set was cleared for staged production use.</p><p><strong>The signal</strong> The first live batch failed because evaluation and production invoked the model through different execution paths.</p><p><strong>The correction</strong> We stopped the rollout, proved one live path end to end, then recovered the queue in controlled stages.</p><p><strong>What became permanent</strong> Live-path probes became a release gate, with isolated runtime configuration, shadow mode, rollback, and monitored cutover.</p></div>
+        </details>
+        <details class="incident reveal">
+          <summary>
+            <span class="incident-index">06</span>
+            <span class="incident-summary"><small>Outcome observability</small><strong>A green health check hid a failing customer pipeline.</strong></span>
+            <span class="incident-toggle">Read case</span>
+          </summary>
+          <div class="incident-body"><p><strong>The decision</strong> Scheduled-job completion was treated as operational health.</p><p><strong>The signal</strong> Trace review found multi-day reply failures while the process still returned successful exit codes.</p><p><strong>The correction</strong> We restored capacity and recovered waiting tickets through controlled batches.</p><p><strong>What became permanent</strong> Health now means per-ticket outcomes, backed by capacity preflight, an all-error tripwire, circuit breaker, rotating canaries, and transcript recovery.</p></div>
+        </details>
+      </div>
+      <p class="section-bridge reveal">The decisions show how I operate under uncertainty. The synthetic ticket flow shows the resulting control model.</p>
+    </section>
+
+    <section class="demo-section" id="demo">
+      <div class="section-shell section-block">
+        <div class="demo-heading reveal">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow-light">04 / Ticket flow</p>
+            <h2>What happens when<br>a ticket arrives.</h2>
+            <p class="demo-heading-copy">Every request moves through the same six decisions: understand, retrieve, set authority, act, evaluate, and learn. Authority is decided by the stake of the case, not the confidence of the model.</p>
+          </div>
+          <div class="demo-note">
+            <strong>Synthetic demonstration</strong>
+            <p>All names, products, policies, and ticket data below are fictional. The flow mirrors the production decision model; it does not expose customer data or proprietary source code.</p>
+          </div>
+        </div>
+
+        <div class="demo-shell reveal" data-demo>
+          <div class="demo-scenarios" role="tablist" aria-label="Synthetic ticket scenarios">
+            <button class="scenario-button is-selected" id="scenario-account" type="button" role="tab" aria-controls="demo-panel" aria-selected="true" tabindex="0" data-scenario="account">Account access</button>
+            <button class="scenario-button" id="scenario-warranty" type="button" role="tab" aria-controls="demo-panel" aria-selected="false" tabindex="-1" data-scenario="warranty">Warranty request</button>
+            <button class="scenario-button" id="scenario-frustration" type="button" role="tab" aria-controls="demo-panel" aria-selected="false" tabindex="-1" data-scenario="frustration">Customer rejects AI</button>
+          </div>
+
+          <div class="demo-panel" id="demo-panel" role="tabpanel" aria-labelledby="scenario-account" tabindex="0">
+            <div class="demo-ticket">
+              <div class="ticket-topline"><span id="demo-ticket-id">SYN-1042</span><span id="demo-priority">Normal priority</span></div>
+              <p class="ticket-customer" id="demo-customer">Maya Chen</p>
+              <h3 id="demo-subject">Locked out after changing my email</h3>
+              <p id="demo-message">I changed the email on my account and can no longer sign in. Can you restore access?</p>
+            </div>
+
+            <ol class="decision-flow" aria-live="polite">
+              <li class="decision-step"><span>01</span><div><strong>Intake</strong><p id="demo-intake">Classify account access; detect the identity-change dependency.</p></div></li>
+              <li class="decision-step"><span>02</span><div><strong>Retrieve</strong><p id="demo-retrieve">Load account-change policy and identity-verification steps.</p></div></li>
+              <li class="decision-step decision-step-accent"><span>03</span><div><strong>Decide authority</strong><p id="demo-authority">Recommend. Identity change requires a verified human action.</p></div></li>
+              <li class="decision-step"><span>04</span><div><strong>Act</strong><p id="demo-action">Collect the minimum verification set, prepare the account context, and route to an authorized specialist.</p></div></li>
+              <li class="decision-step"><span>05</span><div><strong>Evaluate</strong><p id="demo-evaluate">Check policy compliance, unnecessary data collection, clarity, and correct handoff state.</p></div></li>
+              <li class="decision-step"><span>06</span><div><strong>Learn</strong><p id="demo-learn">Track repeated email-change failures as a product and self-service signal.</p></div></li>
+            </ol>
+          </div>
+        </div>
+        <p class="section-bridge section-bridge-dark reveal">A controlled system becomes durable only when the people closest to the work can improve it.</p>
+      </div>
+    </section>
+
+    <section class="section-shell section-block transformation-section" id="transformation">
+      <div class="section-heading reveal">
+        <p class="eyebrow">05 / People</p>
+        <h2>The team halved. Nobody was replaced.</h2>
+      </div>
+      <p class="transformation-lede reveal">We went from about ten people to five without a backfill. Two or three transferred to other departments because they wanted to and those teams needed them. Three left for performance. The reason we never hired back is that automation absorbed the queue while the people who stayed grew into different jobs &mdash; today only one or two work tickets full time, and the rest own AI maintenance, automation, and knowledge operations.</p>
+
+      <div class="role-journeys">
+        <article class="role-journey reveal">
+          <p class="role-kicker">From frontline support</p>
+          <h3>Automation &amp; integration owner</h3>
+          <p>Builds and maintains warranty automation, support-platform side apps, Slack workflows, and cross-system tooling.</p>
+          <span>Support context became implementation judgment.</span>
+        </article>
+        <article class="role-journey reveal">
+          <p class="role-kicker">From frontline support</p>
+          <h3>AI quality &amp; maintenance owner</h3>
+          <p>Runs structured evaluation, investigates failures, gives release feedback, and maintains defined parts of the AI system.</p>
+          <span>Six months from non-technical to daily owner.</span>
+        </article>
+        <article class="role-journey reveal">
+          <p class="role-kicker">From support &amp; training</p>
+          <h3>Knowledge operations owner</h3>
+          <p>Owns knowledge freshness, launch readiness, macros, training, and retrieval quality for people and AI.</p>
+          <span>Documentation became production infrastructure.</span>
+        </article>
+      </div>
+
+      <div class="transformation-proof reveal">
+        <p><strong>How I grew the AI owner.</strong> The signal I look for is not raw performance &mdash; it is someone who improves the people around them while doing their own job well. I wanted to delegate AI maintenance, so I gave him material to work through, walked him through the architecture <em>and my reasoning behind it</em> in one-to-ones, then pushed him to experiment until he understood it from the inside rather than following my procedures. We set the goal in writing. Six months later he owned day-to-day maintenance of the email agent, and I rarely have to step in. He is not technical by background. Neither am I.</p>
+        <p><strong>Where I was weak, and what fixed it.</strong> In my first year as a manager I let three people go, and two of those took far too long. I kept extending coaching because I wanted them to improve, and the cost landed on the team's morale rather than on me. What changed is that I stopped treating being liked as part of the job. My responsibility is to have the best team and do good work &mdash; once that was clear, hard conversations got substantially easier.</p>
+        <p><strong>Hiring, and one miss I corrected.</strong> I have interviewed around fifteen people for support roles, on a process I designed myself. Support is entry-level here, so I screen for character: curiosity, learning ability, clear thinking, and whether someone reflects honestly on their own mistakes. I once hired someone strong who turned out to want a stable environment, which ours is not. So I changed the process: I now describe the pace and the chaos as realistically as I can, close to talking the candidate out of it, and watch whether the enthusiasm survives an honest negative preview. Our most recent hire came through that version and is one of the strongest we have had.</p>
+        <p><strong>The first two people I would hire here.</strong> First, a knowledge-base owner &mdash; because a correct, current knowledge base plus a robust AI structure is most of what makes an AI agent work. Second, an evaluation and service-quality auditor, to check that answers are current, responses are correct, and actions follow policy. The second role holds the first accountable. I hold the second accountable by auditing tickets myself and by watching customer feedback and satisfaction, so the internal quality score can never drift away from what customers actually experienced.</p>
+      </div>
+      <p class="section-bridge reveal">The result is not a smaller queue team presented as the goal. It is an operation where customer judgment, AI quality, knowledge, and automation each have a named owner.</p>
+    </section>
+
+    <section class="section-shell section-block judgment-section" id="limits">
+      <div class="section-heading reveal">
+        <p class="eyebrow">06 / The honest ledger</p>
+        <h2>What I don't claim.</h2>
+      </div>
+      <div class="section-intro reveal">
+        <p>I would rather you find these here than find them in an interview. Each one is something I could have phrased around, and each one is something I would want to know if I were hiring.</p>
+      </div>
+
+      <div class="incident-list">
+        <details class="incident reveal">
+          <summary>
+            <span class="incident-index">01</span>
+            <span class="incident-summary"><small>Deflection</small><strong>AI search adoption grew. Contact volume did not fall.</strong></span>
+            <span class="incident-toggle">Read case</span>
+          </summary>
+          <div class="incident-body"><p>Contact-us clicks per hundred sessions went 2.26, 2.73, 2.73, 2.81 across the same months that AI search intensity rose 27%. There is no detectable deflection effect, and I will not imply one. The honest reading is that we made the Help Center more useful and more people engaged with it, including by asking us. Establishing whether AI search actually prevents contacts needs an experiment I have not yet run.</p></div>
+        </details>
+        <details class="incident reveal">
+          <summary>
+            <span class="incident-index">02</span>
+            <span class="incident-summary"><small>Quality signal</small><strong>My live AI surface has no resolution-quality metric right now.</strong></span>
+            <span class="incident-toggle">Read case</span>
+          </summary>
+          <div class="incident-body"><p>The thumbs-up and thumbs-down control on AI search answers has been firing into analytics for months against a dimension that was never registered, so those votes were discarded on arrival and cannot be recovered. It is the same failure mode I diagnosed on the chatbot: a system that looks healthy because the thing that would reveal failure was never being measured. I am fixing it in both directions &mdash; registering the dimension so future data accrues, and running a sampled conversation audit, which is the remedy I prescribed for the chatbot and should have applied to my own surface sooner.</p></div>
+        </details>
+        <details class="incident reveal">
+          <summary>
+            <span class="incident-index">03</span>
+            <span class="incident-summary"><small>Platform experience</small><strong>I have not worked on Sierra, Decagon, or Forethought.</strong></span>
+            <span class="incident-toggle">Read case</span>
+          </summary>
+          <div class="incident-body"><p>My chatbot platform partner was a small vendor, and the internal system I built afterward is my own. I know the shape of the work &mdash; selection, contracting, conversation design, escalation logic, performance review, and the decision to end it &mdash; but I would be learning a specific platform, not arriving fluent in one.</p></div>
+        </details>
+        <details class="incident reveal">
+          <summary>
+            <span class="incident-index">04</span>
+            <span class="incident-summary"><small>Scope</small><strong>No chatbot of mine is live today, and Help Center AI search is not one.</strong></span>
+            <span class="incident-toggle">Read case</span>
+          </summary>
+          <div class="incident-body"><p>My live customer-facing AI surface is the email agent. Help Center AI search is single-turn retrieval &mdash; genuinely useful, and genuinely not a conversational agent, so I count it as knowledge infrastructure rather than as a second chatbot. The multi-agent conversational system is real and in daily use, but by colleagues across departments, not by customers. And while our BI team now self-serves support data through it, I have not put a number on what that saved &mdash; the cross-functional benefit is real but currently qualitative, and the job description asks for measurable.</p></div>
+        </details>
+      </div>
+      <p class="section-bridge reveal">If those four are disqualifying, they should be. If they aren't, here is what I would do with the mandate.</p>
+    </section>
+
+    <section class="section-shell section-block harvey-section" id="harvey">
+      <div class="why-harvey reveal">
+        <p class="eyebrow">07 / Why Harvey</p>
+        <h2>The mandate is the job I have been doing without the title.</h2>
+        <p>Harvey is asking one person to own the Help Center chatbot and the internal email-ticket AI agent against clear metrics, to manage the platform partner with real performance data, to make other CX leads better at AI in their own workflows, to represent the program credibly to leadership, and to build a team once it earns one. I have done four of those five in production, and the fifth &mdash; a live customer chatbot &mdash; I have owned before, through its full life and its ending.</p>
+        <p>What I would bring is not a preference for any particular architecture. It is the habit of asking what a number excludes before I present it, the discipline of making autonomy something a system earns rather than something I grant, and the experience of growing people into work I used to do myself.</p>
+      </div>
+
+      <div class="transfer-wrap reveal">
+        <p class="eyebrow">First 90 days</p>
+        <div class="transfer-grid">
+          <article class="phase">
+            <p class="phase-days">Days 0-30</p>
+            <h3>Audit the numbers before I inherit them</h3>
+            <p>Learn the chatbot and email-agent journeys, the partner's roadmap, the knowledge sources, and the decision rights. Then do the thing I wish I had done sooner last time: read actual conversations, and establish what containment, deflection, resolution quality, AI CSAT, and escalation rate currently exclude &mdash; before I stand behind any of them.</p>
+          </article>
+          <article class="phase">
+            <p class="phase-days">Days 31-60</p>
+            <h3>Run one pilot with the criteria written first</h3>
+            <p>Choose one high-friction journey with a clear CX owner. Agree the success and safety criteria with the partner before the pilot starts, not after the results arrive. Connect it to an evaluation set, run it in shadow, and expand only what clears the bar on the live path.</p>
+          </article>
+          <article class="phase">
+            <p class="phase-days">Days 61-90</p>
+            <h3>Make the program legible, including the bad parts</h3>
+            <p>Present the first operating review: outcomes, failure causes, what the partner did and didn't deliver, what I got wrong, and what the team needs next. A review that only contains good news trains everyone to stop reading it.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="principle-section">
+      <div class="section-shell principle-inner reveal">
+        <p class="eyebrow eyebrow-light">The principle</p>
+        <p class="principle-quote">A metric you cannot attack is a metric you do not yet understand. The useful question is never how good the number looks, but what it leaves out.</p>
+      </div>
+    </section>
+
+    <section class="cta-section section-shell">
+      <div class="cta-card reveal">
+        <div>
+          <p class="eyebrow">The fit</p>
+          <h2>A conversational AI owner and people leader, ready for San Francisco.</h2>
+          <p>I am relocating from Taipei with my family for this mandate, and I would need visa sponsorship. I can start remote and move as soon as it makes sense for the team.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="button button-primary" href="mailto:dans.huang@hey.com">Start a conversation</a>
+          <a class="text-link" href="assets/dans-huang-resume.pdf">Download resume <span aria-hidden="true">&rarr;</span></a>
+          <a class="text-link" href="https://www.linkedin.com/in/dans-huang/">LinkedIn <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <p>Dans Huang &mdash; Conversational AI Program Ownership</p>
+    <p>De-identified portfolio. Synthetic demo data. No customer data or proprietary source code.</p>
+  </footer>
+</body>
+</html>
