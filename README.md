@@ -1,42 +1,45 @@
-# Conversational AI Program Ownership — Portfolio
+# Notes for the AI Support Lead role
 
-Public portfolio for Dans Huang's Harvey AI Support Lead application. It is a
-hiring-manager case study, not a code sample or an export of Positive Grid
-systems.
+A single plain page: Dans Huang's answers to what Harvey's AI Support Lead
+posting asks for, organised by the posting's own five requirements, including
+the parts where the answer is partial.
 
-The narrative is organized around three conversational surfaces run as one
-program: a 24/7 email agent working live customer tickets, a governed
-multi-agent system colleagues across departments use in Slack, and an external
-Help Center chatbot owned from contract through shutdown. It also covers the
-knowledge and retrieval layer underneath, the reporting cadence to leadership,
-and how frontline specialists grew into owners of AI quality, automation, and
-knowledge operations.
+## Why it is plain
+
+The Ashby application form has no cover letter field, no free-text "why Harvey",
+and no website field. It collects a resume, a LinkedIn URL, work-eligibility
+answers, and a location question with one small context box. This page is the
+only place any narrative can live, and it is reached by one extra click from
+someone who has already read the resume. So it is written as a short document
+rather than a designed case study: no hero, no accent colour, no interactive
+demo, about 1,500 words.
+
+An earlier, much longer case-study version exists in the working repository at
+`portfolio/07-harvey-ai-support-lead-portfolio/`. It is deliberately not
+published. Two public versions of the same person invite the question of which
+one is real, and the longer version carried far more claim surface than a
+screening reader needs.
 
 ## What is here
 
-- `index.html` - the complete case study and synthetic interactive demo
-- `styles.css` - standalone responsive design
-- `script.js` - progressive reveal, active navigation, and demo state
+- `index.html` - the whole page, styles inline, no dependencies
 - `assets/dans-huang-resume.pdf` - the AI Support Lead resume
 
 ## Source of truth
 
-Content is authored in the working repository at
-`portfolio/07-harvey-ai-support-lead-portfolio/` and copied here to publish.
-Positioning rationale and the evidence ledger behind every number live in
-`portfolio/06-harvey-application-private/`, which is never published.
+Authored at `portfolio/09-harvey-plain-brief/` and copied here to publish.
+Positioning rationale, the evidence ledger behind every number, and the
+application inputs live in `portfolio/06-harvey-application-private/`, which is
+never published.
 
 ## Claim boundary
 
-The page states what is not claimed as plainly as what is. Specifically: no
-deflection effect is claimed, Help Center AI search is described as single-turn
-retrieval rather than a conversational agent, no chatbot is live today, no
-experience with Sierra, Decagon, or Forethought is implied, and the
-cross-functional benefit of the internal system is described as qualitative
-because it has not been quantified.
+Concessions are stated inside the relevant answer rather than collected into a
+separate list: no chatbot is live today, the multi-agent system is internal,
+the cross-functional benefit is not quantified, and there is no experience with
+Sierra, Decagon, or Forethought.
 
 ## Confidentiality boundary
 
-The page contains no customer data, real ticket IDs, colleague names,
-credentials, internal URLs, proprietary source code, or raw internal
-screenshots. All interactive ticket data is synthetic.
+No customer data, ticket IDs, colleague names, credentials, internal URLs,
+proprietary source code, or internal screenshots.
