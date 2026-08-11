@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dans Huang's production support operations portfolio: AI ticket handling, Zendesk automation, governed knowledge, evaluation, monitoring, and support intelligence.">
+  <meta name="theme-color" content="#f3efe6">
+  <title>Dans Huang | Support Operations Systems</title>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="styles.css?v=8">
+  <script src="script.js?v=5" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Dans Huang, home">
+      <span class="wordmark-mark">DH</span>
+      <span>Dans Huang</span>
+    </a>
+    <nav class="site-nav" aria-label="Portfolio sections">
+      <a href="#system">System</a>
+      <a href="#judgment">Decisions</a>
+      <a href="#demo">Ticket flow</a>
+      <a href="#transformation">Team</a>
+      <a href="#harvey">Harvey</a>
+    </nav>
+    <a class="header-jump" href="#harvey">Why Harvey</a>
+    <a class="header-cta" href="assets/dans-huang-resume.pdf">Resume</a>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Taipei-based | Full-time remote | Production support operations portfolio</p>
+        <h1>I built the operating layer <em>beyond Zendesk.</em></h1>
+        <p class="hero-lede">I design and run a production system that handles tickets with AI, connects support workflows across tools, governs what humans and AI know, measures quality, and turns every failure into the next operational improvement. I came to this work through seven years across frontline support, training, knowledge, and team leadership.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#system">See what I built</a>
+          <a class="text-link" href="#demo">Follow a ticket <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <p class="confidentiality-note">Every interface and demonstration shown here is a synthetic reconstruction. I validate the metrics against production evidence, but I do not publish my employer's customer data, systems, or source code.</p>
+      </div>
+
+      <aside class="brief-card reveal" aria-label="Production operating brief">
+        <div class="brief-topline">
+          <span>Operating brief</span>
+          <span class="status"><i></i> Production + evolving</span>
+        </div>
+        <p class="brief-title">What runs in production</p>
+        <dl class="brief-list">
+          <div><dt>Handles</dt><dd>Tickets with AI</dd></div>
+          <div><dt>Acts through</dt><dd>APIs + workflows</dd></div>
+          <div><dt>Knows through</dt><dd>Governed retrieval</dd></div>
+          <div><dt>Controlled by</dt><dd>Eval + approval + audit</dd></div>
+          <div><dt>Learns from</dt><dd>Failures + support signals</dd></div>
+        </dl>
+        <div class="brief-footer">Built for a global operation that handled 48,029 tickets in 2025; currently run by a five-person support team.</div>
+      </aside>
+    </section>
+
+    <section class="metrics-band" aria-label="Selected evidence">
+      <div class="metrics-inner">
+        <article class="metric reveal"><strong>48,029</strong><span>tickets handled in 2025, about 4,000 per month</span></article>
+        <article class="metric reveal"><strong>42-45%</strong><span>of closed tickets finished by AI in June-July 2026</span></article>
+        <article class="metric reveal"><strong>99 / 100</strong><span>successful runs in the latest recorded RMA workflow sample, checked Aug 5, 2026</span></article>
+        <article class="metric reveal"><strong>250</strong><span>production evaluation cases across support and security scenarios</span></article>
+        <article class="metric metric-compact reveal"><strong>2-3 wk &rarr; &lt;3 d</strong><span>regional warranty service coordination after workflow redesign</span></article>
+      </div>
+    </section>
+
+    <section class="section-shell section-block intro-grid" id="system">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / The production system</p>
+        <h2>One system,<br>four connected jobs.</h2>
+      </div>
+      <div class="section-intro reveal">
+        <p>This is the system I built and operate: an AI ticket agent, cross-tool automation, governed knowledge, and a control layer that evaluates every change and makes operational problems visible.</p>
+        <p>It extends beyond Zendesk and connects the entire decision path - from understanding a request to resolving it, handing it to a human, or turning the pattern into a knowledge, workflow, or product improvement.</p>
+      </div>
+
+      <div class="system-map reveal" role="img" aria-label="Support operating architecture from customer request through decision, action, control, and learning">
+        <div class="map-column map-entry">
+          <p class="map-label">Customer asks</p>
+          <div class="map-node">Zendesk tickets</div>
+          <div class="map-node">Help Center</div>
+          <div class="map-node">Slack operators</div>
+        </div>
+        <div class="map-arrow" aria-hidden="true">&rarr;</div>
+        <div class="map-column map-runtime">
+          <p class="map-label">System decides</p>
+          <div class="map-node map-node-accent">Classify + research</div>
+          <div class="map-node">Retrieve knowledge</div>
+          <div class="map-node">Set authority</div>
+        </div>
+        <div class="map-arrow" aria-hidden="true">&rarr;</div>
+        <div class="map-column map-control">
+          <p class="map-label">System acts</p>
+          <div class="map-node">Resolve or hand off</div>
+          <div class="map-node">Run workflows</div>
+          <div class="map-node">Record every action</div>
+        </div>
+        <div class="map-arrow" aria-hidden="true">&rarr;</div>
+        <div class="map-column map-learning">
+          <p class="map-label">Operation improves</p>
+          <div class="map-node">Evaluate quality</div>
+          <div class="map-node">Monitor failures</div>
+          <div class="map-node">Fix the system</div>
+        </div>
+      </div>
+
+      <div class="capability-heading reveal">
+        <p class="eyebrow">What I built inside it</p>
+        <h3>Four production components, each with a clear operational job.</h3>
+        <p class="technical-intro">The main story stays operational. Open the technical notes only where implementation detail helps you evaluate the work.</p>
+      </div>
+
+      <div class="module-grid">
+        <article class="module-card reveal">
+          <div class="module-meta"><span class="module-number">01</span><span class="module-state">Live</span></div>
+          <h3>AI ticket operations</h3>
+          <p>A 24/7 customer-facing agent classifies each request, assembles context, researches the answer, and either resolves the ticket or prepares a controlled human handoff.</p>
+          <ul><li>Explicit authority boundaries</li><li>Policy-mandated escalation</li><li>Dedicated identity and audit trail</li></ul>
+          <details class="technical-note">
+            <summary aria-label="How AI ticket operations works"><span>How it works</span><span aria-hidden="true">+</span></summary>
+            <div class="technical-note-body">
+              <p><strong>Problem</strong> A model can pass an offline test and still fail in production when the real execution path, credentials, tools, or cost behavior differ.</p>
+              <p><strong>Implementation</strong> The ticket agent and wider support-ops agents run different models behind a provider-neutral runtime, so model choice stays a scored pass-rate-versus-cost decision rather than an architecture change. Each ticket emits a PII-masked trace at the orchestrator layer, with dedicated credentials, per-ticket cost accounting, and a circuit breaker that halts an all-error batch.</p>
+              <p><strong>Validation</strong> Changes move through a 250-case production suite spanning core support categories and security scenarios, then shadow or private-note replay, live-path probes, staged activation, and rollback controls. A real cutover exposed that evaluation and production invoked the model through different execution paths - SDK versus CLI - so production parity became a release requirement rather than a one-off fix.</p>
+            </div>
+          </details>
+        </article>
+        <article class="module-card reveal">
+          <div class="module-meta"><span class="module-number">02</span><span class="module-state module-state-evolving">Live + evolving</span></div>
+          <h3>Workflow automation</h3>
+          <p>Zendesk APIs, side apps, Slack interfaces, and orchestrated workflows connect ticket work with warranty, orders, shipping, and internal operations.</p>
+          <ul><li>Regional warranty coordination</li><li>Human approvals for consequential actions</li><li>Versioned logic and runbooks</li></ul>
+          <details class="technical-note">
+            <summary aria-label="How workflow automation works"><span>How it works</span><span aria-hidden="true">+</span></summary>
+            <div class="technical-note-body">
+              <p><strong>Problem</strong> Mature n8n workflows carry real side effects. Rewriting them wholesale would trade visible complexity for hidden migration risk.</p>
+              <p><strong>Implementation</strong> I keep n8n where visual orchestration is the better tool and move decision-heavy paths into versioned code when they need tests, replay, and diffs. The live RMA flow spans Zendesk, Jira, Slack, registration, returns, and internal review branches. Ports begin by pinning the existing input-output contract, then comparing the same cases in shadow before authority moves.</p>
+              <p><strong>Validation</strong> The current 82-node RMA workflow completed 99 of its latest 100 recorded runs successfully when reviewed on August 5, 2026. Code migrations preserve the previous workflow as a rollback target. A stronger approval layer - exact-draft binding, actor checks, and timed escalation - shipped dark behind feature flags with 52 new tests; activation is gated separately.</p>
+            </div>
+          </details>
+        </article>
+        <article class="module-card reveal">
+          <div class="module-meta"><span class="module-number">03</span><span class="module-state">Live</span></div>
+          <h3>Knowledge infrastructure</h3>
+          <p>A governed, versioned knowledge layer serves both people and AI, while hybrid search retrieves by symptoms, products, firmware, and exact error strings.</p>
+          <ul><li>Lifecycle ownership and freshness</li><li>Help Center and agent retrieval</li><li>Access control before model context</li></ul>
+          <details class="technical-note">
+            <summary aria-label="How knowledge infrastructure works"><span>How it works</span><span aria-hidden="true">+</span></summary>
+            <div class="technical-note-body">
+              <p><strong>Problem</strong> Dense retrieval could be semantically close but operationally wrong, such as ranking firmware content above a refund policy. Prompt rules also cannot reliably protect restricted knowledge after it reaches model context.</p>
+              <p><strong>Implementation</strong> A confidence gate keeps fast dense retrieval on the common path, then escalates uncertain searches to multi-query dense + sparse retrieval fused with reciprocal rank fusion. The Help Center index is built only from anonymously accessible Zendesk articles, chunked with overlap, embedded in batches, and tagged with lifecycle metadata before upsert.</p>
+              <p><strong>Validation</strong> The sparse encoder is pinned to the index-writer contract with a deterministic self-test; a kill switch returns the system to dense-only search. After the June 17, 2026 change, the reported refund, warranty, and firmware failure clusters returned the correct source in 5 of 5 verification runs - a narrow post-change check, not a global accuracy claim.</p>
+            </div>
+          </details>
+        </article>
+        <article class="module-card reveal">
+          <div class="module-meta"><span class="module-number">04</span><span class="module-state module-state-evolving">Live + expanding</span></div>
+          <h3>Quality &amp; operating intelligence</h3>
+          <p>A production evaluation suite, approval gates, monitoring, and support signals show whether the system is safe, healthy, and improving in production.</p>
+          <ul><li>250 cases across 11 support categories</li><li>25 adversarial cases across 16 security themes</li><li>Every failure becomes an owned change</li></ul>
+          <details class="technical-note">
+            <summary aria-label="How quality and operating intelligence works"><span>How it works</span><span aria-hidden="true">+</span></summary>
+            <div class="technical-note-body">
+              <p><strong>Problem</strong> A good-looking reply does not prove the agent took the right action, and observability without an owner or response loop is only a dashboard.</p>
+              <p><strong>Implementation</strong> PII-masked Langfuse traces record each ticket's input, execution path, outcome, latency, model, error, and self-reported gap. An hourly tripwire watches outcome failures; a daily review routes behavior, knowledge, policy, and infrastructure findings to different owners. Confirmed DSAT root causes cannot close without a regression case.</p>
+              <p><strong>Validation</strong> The first trace-driven review found a multi-day provider-quota outage that return-code health checks had missed. The permanent fix added outcome-based health, dedicated-key isolation, capacity preflight, bounded retries, and recovery verification. Reply evaluation is live; trajectory and end-state evaluation are designed but not yet in production.</p>
+            </div>
+          </details>
+        </article>
+      </div>
+
+      <p class="evidence-boundary reveal"><strong>Evidence boundary</strong> These notes are distilled from private production repositories, merged pull requests, evaluation artifacts, and live workflow execution history. Customer data and proprietary code are not published.</p>
+
+      <p class="section-bridge reveal">The architecture explains the parts. Production decisions show whether I can actually own them.</p>
+    </section>
+
+    <section class="section-shell section-block judgment-section" id="judgment">
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 / Decisions and permanent change</p>
+        <h2>Six times production disproved me - and what became permanent.</h2>
+      </div>
+      <p class="judgment-lede reveal">I personally built the AI support operation: the original n8n-based email agent and the first versions of nearly every component in today's system. As it matured, I handed defined AI maintenance areas to two specialists; our automation specialist primarily builds process automation. I still set the architecture, authority boundaries, evaluation bar, release gates, and incident response, and I own what happens in production. These six cases show how that ownership works.</p>
+
+      <div class="incident-list">
+        <details class="incident reveal">
+          <summary>
+            <span class="incident-index">01</span>
+            <span class="incident-summary"><small>Measurement</small><strong>I was measuring the wrong thing.</strong></span>
+            <span class="incident-toggle">Read case</span>
+          </summary>
+          <div class="incident-body"><p><strong>The decision</strong> I treated final ticket ownership as the AI handoff metric and planned toward an 80% AI-resolution target.</p><p><strong>The signal</strong> Final ownership missed mid-ticket human intervention, while many apparent failures were correct warranty or authority escalations.</p><p><strong>The correction</strong> I separated AI-attempted capability from handoff quality instead of optimizing one proxy.</p><p><strong>What became permanent</strong> The roadmap moved from sequential automation gates to dual-track execution governed by customer and operating outcomes.</p></div>
+        </details>
+        <details class="incident reveal">
+          <summary>
+            <span class="incident-index">02</span>
+            <span class="incident-summary"><small>Quality</small><strong>A flattering quality score contradicted customer outcomes.</strong></span>
+            <span class="incident-toggle">Read case</span>
+          </summary>
+          <div class="incident-body"><p><strong>The decision</strong> Our audit rubric rated the AI above the human team.</p><p><strong>The signal</strong> Its dissatisfaction outcomes were worse; the rubric rewarded polished responses without anchoring to customer satisfaction.</p><p><strong>The correction</strong> I rejected the score and recalibrated the rubric around DSAT and explicit human-escalation failures.</p><p><strong>What became permanent</strong> High-scoring dissatisfied tickets now flag calibration failure, and confirmed DSAT causes require a regression case before closure.</p></div>
+        </details>
+        <details class="incident reveal">
+          <summary>
+            <span class="incident-index">03</span>
+            <span class="incident-summary"><small>Ownership</small><strong>I approved the policy, then crossed the implementation boundary.</strong></span>
+            <span class="incident-toggle">Read case</span>
+          </summary>
+          <div class="incident-body"><p><strong>The decision</strong> A policy approval was treated as permission to push the implementation directly.</p><p><strong>The signal</strong> The execution bypassed the specialist who owned the production agent.</p><p><strong>The correction</strong> I ordered a rollback four minutes after the mismatch surfaced and reopened the work under the correct owner.</p><p><strong>What became permanent</strong> Policy approval no longer grants implementation ownership; production changes route through the accountable specialist.</p></div>
+        </details>
+        <details class="incident reveal">
+          <summary>
+            <span class="incident-index">04</span>
+            <span class="incident-summary"><small>Simplicity</small><strong>More rules made the AI less capable.</strong></span>
+            <span class="incident-toggle">Read case</span>
+          </summary>
+          <div class="incident-body"><p><strong>The decision</strong> Two weak replies initially produced proposals for more keywords and mandatory gates.</p><p><strong>The signal</strong> The rules were overriding semantic judgment and forcing customers to repeat steps they had already completed.</p><p><strong>The correction</strong> I stopped the additions and separated hard safety and authority boundaries from reversible support judgment.</p><p><strong>What became permanent</strong> We deleted the keyword table and replaced four rigid gates with principle-and-signal checks.</p></div>
+        </details>
+        <details class="incident reveal">
+          <summary>
+            <span class="incident-index">05</span>
+            <span class="incident-summary"><small>Release discipline</small><strong>A passing evaluation did not mean production worked.</strong></span>
+            <span class="incident-toggle">Read case</span>
+          </summary>
+          <div class="incident-body"><p><strong>The decision</strong> A model that passed the fixed evaluation set was cleared for staged production use.</p><p><strong>The signal</strong> The first live batch failed because evaluation and production invoked the model through different execution paths.</p><p><strong>The correction</strong> We stopped the rollout, proved one live path end to end, then recovered the queue in controlled stages.</p><p><strong>What became permanent</strong> Live-path probes became a release gate, with isolated runtime configuration, shadow mode, rollback, and monitored cutover.</p></div>
+        </details>
+        <details class="incident reveal">
+          <summary>
+            <span class="incident-index">06</span>
+            <span class="incident-summary"><small>Outcome observability</small><strong>A green health check hid a failing customer pipeline.</strong></span>
+            <span class="incident-toggle">Read case</span>
+          </summary>
+          <div class="incident-body"><p><strong>The decision</strong> Scheduled-job completion was treated as operational health.</p><p><strong>The signal</strong> Trace review found multi-day reply failures while the process still returned successful exit codes.</p><p><strong>The correction</strong> We restored capacity and recovered waiting tickets through controlled batches.</p><p><strong>What became permanent</strong> Health now means per-ticket outcomes, backed by capacity preflight, an all-error tripwire, circuit breaker, rotating canaries, and transcript recovery.</p></div>
+        </details>
+      </div>
+      <p class="section-bridge reveal">The decisions show how I operate under uncertainty. The synthetic ticket flow shows the resulting control model.</p>
+    </section>
+
+    <section class="demo-section" id="demo">
+      <div class="section-shell section-block">
+        <div class="demo-heading reveal">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow-light">03 / Ticket flow</p>
+            <h2>What happens when<br>a ticket arrives.</h2>
+            <p class="demo-heading-copy">Every request moves through the same six decisions: understand, retrieve, set authority, act, evaluate, and learn.</p>
+          </div>
+          <div class="demo-note">
+            <strong>Synthetic demonstration</strong>
+            <p>All names, products, policies, and ticket data below are fictional. The flow mirrors the production decision model; it does not expose customer data or proprietary source code.</p>
+          </div>
+        </div>
+
+        <div class="demo-shell reveal" data-demo>
+          <div class="demo-scenarios" role="tablist" aria-label="Synthetic ticket scenarios">
+            <button class="scenario-button is-selected" id="scenario-account" type="button" role="tab" aria-controls="demo-panel" aria-selected="true" tabindex="0" data-scenario="account">Account access</button>
+            <button class="scenario-button" id="scenario-warranty" type="button" role="tab" aria-controls="demo-panel" aria-selected="false" tabindex="-1" data-scenario="warranty">Warranty request</button>
+            <button class="scenario-button" id="scenario-frustration" type="button" role="tab" aria-controls="demo-panel" aria-selected="false" tabindex="-1" data-scenario="frustration">Customer rejects AI</button>
+          </div>
+
+          <div class="demo-panel" id="demo-panel" role="tabpanel" aria-labelledby="scenario-account" tabindex="0">
+            <div class="demo-ticket">
+              <div class="ticket-topline"><span id="demo-ticket-id">SYN-1042</span><span id="demo-priority">Normal priority</span></div>
+              <p class="ticket-customer" id="demo-customer">Maya Chen</p>
+              <h3 id="demo-subject">Locked out after changing my email</h3>
+              <p id="demo-message">I changed the email on my account and can no longer sign in. Can you restore access?</p>
+            </div>
+
+            <ol class="decision-flow" aria-live="polite">
+              <li class="decision-step"><span>01</span><div><strong>Intake</strong><p id="demo-intake">Classify account access; detect the identity-change dependency.</p></div></li>
+              <li class="decision-step"><span>02</span><div><strong>Retrieve</strong><p id="demo-retrieve">Load account-change policy and identity-verification steps.</p></div></li>
+              <li class="decision-step decision-step-accent"><span>03</span><div><strong>Decide authority</strong><p id="demo-authority">Recommend. Identity change requires a verified human action.</p></div></li>
+              <li class="decision-step"><span>04</span><div><strong>Act</strong><p id="demo-action">Collect the minimum verification set, prepare the account context, and route to an authorized specialist.</p></div></li>
+              <li class="decision-step"><span>05</span><div><strong>Evaluate</strong><p id="demo-evaluate">Check policy compliance, unnecessary data collection, clarity, and correct handoff state.</p></div></li>
+              <li class="decision-step"><span>06</span><div><strong>Learn</strong><p id="demo-learn">Track repeated email-change failures as a product and self-service signal.</p></div></li>
+            </ol>
+          </div>
+        </div>
+        <p class="section-bridge section-bridge-dark reveal">A controlled system becomes durable only when the people closest to the work can improve it.</p>
+      </div>
+    </section>
+
+    <section class="section-shell section-block transformation-section" id="transformation">
+      <div class="section-heading reveal">
+        <p class="eyebrow">04 / Team operating model</p>
+        <h2>Then I redesigned the team around the system.</h2>
+      </div>
+      <p class="transformation-lede reveal">I built the initial AI operation myself, then used frontline expertise as the foundation for distributed technical ownership. Specialists who understood the customer problem best grew into maintaining parts of the AI system, building process automation, and governing the knowledge behind it.</p>
+
+      <div class="role-journeys">
+        <article class="role-journey reveal">
+          <p class="role-kicker">From frontline support</p>
+          <h3>Automation &amp; integration owner</h3>
+          <p>Builds and maintains RMA automation, Zendesk side apps, Slack workflows, and cross-system tooling.</p>
+          <span>Support context became implementation judgment.</span>
+        </article>
+        <article class="role-journey reveal">
+          <p class="role-kicker">From frontline support</p>
+          <h3>AI quality &amp; maintenance owner</h3>
+          <p>Runs structured evaluation, investigates failures, gives release feedback, and maintains the customer-facing agent.</p>
+          <span>Agent instinct became an evaluation discipline.</span>
+        </article>
+        <article class="role-journey reveal">
+          <p class="role-kicker">From support &amp; training</p>
+          <h3>Knowledge operations owner</h3>
+          <p>Owns knowledge freshness, launch readiness, macros, training, and retrieval quality for people and AI.</p>
+          <span>Documentation became production infrastructure.</span>
+        </article>
+      </div>
+
+      <div class="transformation-proof reveal">
+        <p>Today, one of five support specialists focuses full-time on the queue. The other four own specialized work across AI development and quality, automation, and knowledge operations.</p>
+        <p>Two specialists now maintain defined parts of the AI system I initially built; our automation specialist primarily builds process automation, and our knowledge owner governs the knowledge lifecycle. I set the architecture, decision rights, release bar, and incident model.</p>
+      </div>
+      <p class="section-bridge reveal">Harvey's role asks for this same combination: support judgment, production ownership, and systems that make specialists better.</p>
+    </section>
+
+    <section class="section-shell section-block harvey-section" id="harvey">
+      <div class="why-harvey reveal">
+        <p class="eyebrow">05 / Why Harvey</p>
+        <h2>Harvey is asking for the operating layer I already own.</h2>
+        <p>The mandate is to own automation and intelligence beyond the support stack, improve how specialists work, and turn promising pilots into maintainable production systems. I bring that systems ownership together with seven years of firsthand support judgment.</p>
+        <p>Harvey's customers do consequential work. What I would bring from consumer support is the operating discipline behind the workflows: grounded knowledge, explicit authority boundaries, evaluation gates, auditability, and human ownership. The production incidents above show how I apply that discipline when automation is wrong, unavailable, or unsafe.</p>
+      </div>
+
+      <div class="transfer-wrap reveal">
+        <p class="eyebrow">First 90 days</p>
+        <div class="transfer-grid">
+          <article class="phase">
+            <p class="phase-days">Days 0-30</p>
+            <h3>Map the real operation</h3>
+            <p>Trace the support stack, decision rights, knowledge sources, failure modes, and baseline quality. Begin read-only and in shadow mode while learning how specialists and customer teams define risk.</p>
+          </article>
+          <article class="phase">
+            <p class="phase-days">Days 31-60</p>
+            <h3>Prove one narrow loop</h3>
+            <p>Choose one high-friction workflow with a clear support-side owner. Ship it with explicit authority, a fixed evaluation set, observability, rollback, and documentation.</p>
+          </article>
+          <article class="phase">
+            <p class="phase-days">Days 61-90</p>
+            <h3>Scale what earned it</h3>
+            <p>Expand only the patterns that earned it. Connect reporting to enablement and product feedback, then establish a repeatable operating cadence.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="principle-section">
+      <div class="section-shell principle-inner reveal">
+        <p class="eyebrow eyebrow-light">The principle</p>
+        <p class="principle-quote">AI is a means. The goal is operational excellence: faster resolution, better judgment, safer execution, and an operation that learns as it runs.</p>
+      </div>
+    </section>
+
+    <section class="cta-section section-shell">
+      <div class="cta-card reveal">
+        <div>
+          <p class="eyebrow">The fit</p>
+          <h2>A hands-on support systems owner, based in Taipei.</h2>
+          <p>I am seeking a full-time remote role with meaningful ownership across support automation, AI-assisted workflows, knowledge, evaluation, reporting, and specialist enablement. I am open to discussing the employment structure that makes Taipei-based work practical.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="button button-primary" href="mailto:dans.huang@hey.com">Start a conversation</a>
+          <a class="text-link" href="assets/dans-huang-resume.pdf">Download resume <span aria-hidden="true">&rarr;</span></a>
+          <a class="text-link" href="https://www.linkedin.com/in/dans-huang/">LinkedIn <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <p>Dans Huang - Support Operations Systems</p>
+    <p>De-identified portfolio. Synthetic demo data. No customer data or proprietary source code.</p>
+  </footer>
+</body>
+</html>
